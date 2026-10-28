@@ -1,0 +1,21 @@
+============================================================
+CLASSIFICATION REPORT: Logistic Regression
+============================================================
+
+              precision    recall  f1-score   support
+
+         ham       0.98      1.00      0.99       482
+        spam       0.99      0.97      0.98       352
+
+    accuracy                           0.99       834
+   macro avg       0.99      0.99      0.99       834
+weighted avg       0.99      0.99      0.99       834
+
+
+============================================================
+CONFUSION MATRIX DETAILS:
+============================================================
+True Negatives (TN - Ham correctly classified): 480
+False Positives (FP - Ham incorrectly flagged as Spam): 2
+False Negatives (FN - Spam missed as Ham): 9
+True Positives (TP - Spam correctly detected): 343

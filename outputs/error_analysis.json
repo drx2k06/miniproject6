@@ -1,0 +1,68 @@
+{
+    "false_positive_count": 2,
+    "false_negative_count": 9,
+    "representative_false_positives": [
+        {
+            "index": 63,
+            "true_label": "ham",
+            "predicted_label": "spam",
+            "spam_probability": 0.7974,
+            "snippet": "Subject: Save up to 70% on international calls!  ........... with our telecoms partner Bumblebee !  Don't get ripped off by expensive hotel, payphone and mobile charges.  SAVE, SAVE, SAVE on international calls with Ryanair's phone partner.  ********...",
+            "explanation": "Legitimate email flagged as spam. Likely triggers include promotional vocabulary, marketing phrases, external links, or corporate newsletter styling."
+        },
+        {
+            "index": 321,
+            "true_label": "ham",
+            "predicted_label": "spam",
+            "spam_probability": 0.5126,
+            "snippet": "Subject: Am I This Or Not?  Wow, talk about a pheenomeenon  == http://www.iamcal.com/software/ami/  AmIThisOrNot Dynamic Peer Rating System  What is It? It's a tool to help you build your own \"Am I X Or Not\" sites.  Where Can I Get It? Basic Version...",
+            "explanation": "Legitimate email flagged as spam. Likely triggers include promotional vocabulary, marketing phrases, external links, or corporate newsletter styling."
+        }
+    ],
+    "representative_false_negatives": [
+        {
+            "index": 76,
+            "true_label": "spam",
+            "predicted_label": "ham",
+            "spam_probability": 0.4772,
+            "snippet": "Subject: ISA Article on Embedded Real-Time Linux Automation Applications . gji  Industrial LINUX News:   The June issue of the ISA's InTech Magazine has an interesting article on how truly open Linux applications can lower development cost and increa...",
+            "explanation": "Spam email evaded filter. Often caused by novel non-standard wording, obfuscated text, minimal trigger tokens, or mimicking conversational formatting."
+        },
+        {
+            "index": 79,
+            "true_label": "spam",
+            "predicted_label": "ham",
+            "spam_probability": 0.4883,
+            "snippet": "Subject: .. kennst mich noch ? nehrb  Hallo,  Wir haben uns schon ziemlich lange nicht mehr gesehen, a ich ja nur noh Zeit f\u00fcr meine Freundin hatte.  DAMIT ist jetzt Schlu\u00df.  Alex hat mich sitzen lassen. Du erh\u00e4lst dieses Mail, weil ich Dir mal zeige...",
+            "explanation": "Spam email evaded filter. Often caused by novel non-standard wording, obfuscated text, minimal trigger tokens, or mimicking conversational formatting."
+        },
+        {
+            "index": 219,
+            "true_label": "spam",
+            "predicted_label": "ham",
+            "spam_probability": 0.4906,
+            "snippet": "Subject: \ufffd\ufffd\u027d\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ucde2,\ufffd\u03fe\ufffd\ufffd\u063c\u06f1\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0461  \u9ec4\u5c71\u65c5\u6e38\u5929\u5929\u53d1  http://www.njchina.com/skttf.htm\r \r \u5357\u4eac\u7279\u4ef7\u5bbe\u9986\u4efb\u4f60\u9009  http://www.njchina.com/bgmc.htm\r \r \u8d3a\u5361\u3001\u8bed\u97f3\u804a\u5929\u3001\u4ea4\u53cb\u3001\u5f81\u5a5a  http://www.njchina.com/qwltgc.htm\r \r \u8da3\u5473\u65b0\u95fb\uff0c\u56fe\u6587\u5e76\u8c8c\uff0c\u5c3d\u5728 http://www.njchina.com",
+            "explanation": "Spam email evaded filter. Often caused by novel non-standard wording, obfuscated text, minimal trigger tokens, or mimicking conversational formatting."
+        },
+        {
+            "index": 397,
+            "true_label": "spam",
+            "predicted_label": "ham",
+            "spam_probability": 0.3362,
+            "snippet": "Subject: LIE`S, MIS-INFORMATION and FRAUD  Sent e-mail message      From: enenkio@webtv.net (Robert\ufffdMoore) Date: Thu, Sep 5, 2002, 8:36am To: UlafalaA@forumsec.org.fj Subject: HAWAI`I & ENENKIO KINGDOMS AMERICANS SHAME !  Sent e-mail message  From: e...",
+            "explanation": "Spam email evaded filter. Often caused by novel non-standard wording, obfuscated text, minimal trigger tokens, or mimicking conversational formatting."
+        },
+        {
+            "index": 425,
+            "true_label": "spam",
+            "predicted_label": "ham",
+            "spam_probability": 0.388,
+            "snippet": "Subject: HAWAI`I & ENENKIO KINGDOMS  AMERICANS SHAME !  Reply From EnenKio The following message was recieved Saturday, 13 July 2002.  Nothing has been amdended or changed. I hold no responcibility for the content of this message.    Subject: EnenKio...",
+            "explanation": "Spam email evaded filter. Often caused by novel non-standard wording, obfuscated text, minimal trigger tokens, or mimicking conversational formatting."
+        }
+    ],
+    "risk_analysis": {
+        "false_positive_impact": "High Severity: Critical correspondence (e.g. banking notices, client proposals, job offers) routed to spam causes missed opportunities and broken trust.",
+        "false_negative_impact": "Moderate Severity: Unsolicited or phishing emails reach the inbox, causing user annoyance and potential exposure to security risks."
+    }
+}

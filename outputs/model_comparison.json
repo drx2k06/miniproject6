@@ -1,0 +1,101 @@
+{
+    "project": "Spam Email Detection Using Machine Learning",
+    "developer": "Daniel Richard Xavier",
+    "champion_model": "Logistic Regression",
+    "trained_at": "2026-10-28 21:42:33",
+    "training_samples": 3332,
+    "test_samples": 834,
+    "dataset_source": "Apache SpamAssassin Public Corpus (2002/2003)",
+    "preprocessing_summary": {
+        "initial_count": 4449,
+        "null_dropped": 0,
+        "duplicates_removed": 283,
+        "final_count": 4166,
+        "label_counts": {
+            "ham": 2406,
+            "spam": 1760
+        },
+        "ham_percentage": 57.75,
+        "spam_percentage": 42.25
+    },
+    "champion_metrics": {
+        "model_name": "Logistic Regression",
+        "sample_count": 834,
+        "accuracy": 0.9868,
+        "precision_spam": 0.9942,
+        "recall_spam": 0.9744,
+        "f1_spam": 0.9842,
+        "macro_f1": 0.9864,
+        "weighted_f1": 0.9868,
+        "roc_auc": 0.9993,
+        "pr_auc": 0.9989,
+        "confusion_matrix": {
+            "tn": 480,
+            "fp": 2,
+            "fn": 9,
+            "tp": 343,
+            "raw_matrix": [
+                [
+                    480,
+                    2
+                ],
+                [
+                    9,
+                    343
+                ]
+            ]
+        },
+        "classification_report_dict": {
+            "ham": {
+                "precision": 0.9815950920245399,
+                "recall": 0.995850622406639,
+                "f1-score": 0.9886714727085479,
+                "support": 482.0
+            },
+            "spam": {
+                "precision": 0.9942028985507246,
+                "recall": 0.9744318181818182,
+                "f1-score": 0.9842180774748924,
+                "support": 352.0
+            },
+            "accuracy": 0.986810551558753,
+            "macro avg": {
+                "precision": 0.9878989952876323,
+                "recall": 0.9851412202942287,
+                "f1-score": 0.9864447750917202,
+                "support": 834.0
+            },
+            "weighted avg": {
+                "precision": 0.9869163724768385,
+                "recall": 0.986810551558753,
+                "f1-score": 0.9867918622502184,
+                "support": 834.0
+            }
+        },
+        "classification_report_text": "              precision    recall  f1-score   support\n\n         ham       0.98      1.00      0.99       482\n        spam       0.99      0.97      0.98       352\n\n    accuracy                           0.99       834\n   macro avg       0.99      0.99      0.99       834\nweighted avg       0.99      0.99      0.99       834\n"
+    },
+    "comparison_table": [
+        {
+            "Model": "Multinomial Naive Bayes",
+            "Accuracy": 0.9808,
+            "Precision (Spam)": 0.997,
+            "Recall (Spam)": 0.9574,
+            "F1-Score (Spam)": 0.9768,
+            "ROC-AUC": 0.9976,
+            "PR-AUC": 0.997,
+            "False Positives (FP)": 1,
+            "False Negatives (FN)": 15
+        },
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 0.9868,
+            "Precision (Spam)": 0.9942,
+            "Recall (Spam)": 0.9744,
+            "F1-Score (Spam)": 0.9842,
+            "ROC-AUC": 0.9993,
+            "PR-AUC": 0.9989,
+            "False Positives (FP)": 2,
+            "False Negatives (FN)": 9
+        }
+    ]
+}

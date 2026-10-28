@@ -1,0 +1,44 @@
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit Local Cache
+.streamlit/
+
+# OS specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Raw archive files (large binaries)
+data/raw/*.tar.bz2
+data/raw/*.tar.gz
+data/raw/*.zip
+data/raw/*.7z
+data/raw/*.csv
+
+# Processed datasets (reproducible via python train.py)
+data/processed/*.csv
+
+# Temporary / Scratch Files
+*.tmp
+scratch/
